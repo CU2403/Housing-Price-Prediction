@@ -64,6 +64,17 @@ To decode consumer decision-making processes in the used car market. The goal wa
 * **Efficiency:** Optimized the Hessian calculation to reduce training time from >10 minutes to <30 seconds for demonstration batches.
 * **Prediction Validation:** Validated model performance using Top-1 Accuracy and Probability Boxplots, showing the model assigns significantly higher probabilities to chosen vehicles compared to rejected alternatives.
 
+### 🔄 Extension: Price Prediction Module
+*Complementing the Choice Model with Intrinsic Valuation*
+
+While the **FastCombinedLogit** model treats price as an external input to determine user utility, predicting the fair market value of a vehicle is equally critical for a holistic market analysis. To bridge this gap, I developed a parallel pricing engine.
+
+* **Modeling Approach:**
+    * **Linear Regression:** Established a baseline to understand linear depreciation trends (e.g., impact of *Car Age* and *Odometer* on Price).
+    * **Decision Tree Regressor:** Implemented to capture non-linear relationships and interaction effects (e.g., how the value of a specific brand drops precipitously after a certain mileage threshold).
+* **Optimization:**
+    * Conducted rigorous **Hyperparameter Tuning** on the Decision Tree (optimizing `max_depth`, `min_samples_split`, and `min_samples_leaf`) to balance bias and variance, ensuring the model generalizes well to unseen inventory data.
+* **Synergy:** This pricing module serves as a crucial input generator for the Choice Model, allowing for dynamic simulation of how price fluctuations impact market share.
 ---
 
 ## 🧰 Tech Stack
@@ -73,7 +84,3 @@ To decode consumer decision-making processes in the used car market. The goal wa
 * **Data Manipulation:** `Pandas`, `NumPy`
 * **Visualization:** `Matplotlib`, `Seaborn`
 
-## 📬 Contact
-**Dylan Xia**
-* [LinkedIn Profile](Insert Your Link Here)
-* [GitHub Profile](Insert Your Link Here)
