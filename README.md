@@ -39,7 +39,7 @@ While ensemble methods often provide stability, extensive experiments revealed t
 ## 🚗 Project 2: Used Car Choice & Market Share Analysis
 
 ### 🎯 Objective
-To decode consumer decision-making processes in the used car market. The goal was not just to predict *which* car a user buys, but to understand *why* (Utility Theory) and to simulate aggregate market shares.
+To decode consumer decision-making processes in the used car market. The goal was not just to predict *which* car a user buys, but to understand *why* (Utility Theory) and to simulate aggregate market shares. This project utilizes a synthetic labeling strategy based on heuristic rules to simulate consumer behavior, creating a controlled environment to validate the Combined Logit algorithm architecture.
 
 ### 🛠️ Methodology
 * **Discrete Choice Modeling (DCM):** Implemented a custom `FastCombinedLogit` class (inheriting from `GenericLikelihoodModel` in `statsmodels`) to handle high-dimensional choice sets (J=17 alternatives).
