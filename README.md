@@ -4,8 +4,7 @@
 This repository showcases two distinct advanced data science projects demonstrating expertise in **Deep Learning (Regression)** and **Discrete Choice Modeling (Classification/Econometrics)**.
 
 1.  **Real Estate Price Prediction:** A deep learning approach to valuing properties, utilizing hyperparameter-tuned Neural Networks.
-2.  **Used Car Consumer Choice Analysis:** A statistical framework using Decision Tree, Linear Regression, and customized `FastCombinedLogit` models to predict consumer purchasing behavior and market shares.
-
+2.  **Used Car Consumer Choice Analysis:** A statistical framework using Decision Tree, Linear Regression, and customized `FastCombinedLogit` models to predict consumer purchasing behavior and acceptable price.
 ---
 
 ## 🏠 Project 1: Real Estate Price Prediction with Deep Learning
